@@ -5,8 +5,7 @@ export default function MainImg() {
   return (
     <section className="w-full mx-auto">
       <Image
-        className="mx-auto mt-0 w-full h-screen"
-        // className='border-4 border-black dark:border-slate-500 drop-shadow-xl shadow-black rounded-full mx-auto mt-8'
+        className="mx-auto mt-0 w-full md:w-2/3 lg:w-5/6 xl:w-screen h-screen"
         src={mainImg}
         // width={1800}
         // height={200}
