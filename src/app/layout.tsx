@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
   title: 'GW Lawyers Ltd',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="bg-amber-100 text-amber-950 dark:bg-amber-950 dark:text-amber-100">
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   )

@@ -12,7 +12,7 @@ export default function Navbar() {
             GW LAWYERS LTD
           </Link>
         </h1>
-        <div className="flex flex-row justify-between align-middle gap-6 text-2xl sm:text-center sm:justify-center sm:p-5 lg:text-2xl">
+        <div className="flex flex-row justify-between align-middle gap-6 text-1xl sm:text-center sm:justify-center sm:p-5 sm:text-2xl">
           <Link
             href="/about"
             className="text-amber-950/80 hover:text-amber-950 no-underline dark:text-amber-100/80 dark:hover:text-amber-100 "
