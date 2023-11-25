@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="bg-amber-100 dark:bg-yellow-950 p-4 sticky top-0 drop-shadow-xl z-10">
-      <div className="prose prose-xl mx-auto flex justify-between flex-col sm:flex-row">
-        <h1 className="text-4xl font-bold grid place-content-center mt-2 mb-8 sm:mb-0 sm:mt-0">
+    <nav className="bg-amber-100 dark:bg-yellow-950 p-4 sticky top-0 drop-shadow-xl z-10 md:p-8">
+      <div className="prose prose-md mx-auto flex justify-between flex-col md:flex-row">
+        <h1 className="text-4xl font-bold grid place-content-center mt-2 mb-8 md:mb-0 sm:mt-0">
           <Link
             href="/"
             className="text-amber-950/80 hover:text-amber-950 no-underline dark:text-amber-100/80 dark:hover:text-amber-100 whitespace-nowrap "
@@ -12,7 +12,7 @@ export default function Navbar() {
             GW LAWYERS LTD
           </Link>
         </h1>
-        <div className="flex flex-row justify-between align-middle gap-6 text-1xl sm:text-center sm:justify-center sm:p-5 sm:text-2xl">
+        <div className="flex flex-row justify-between align-middle gap-6 text-xl sm:text-center md:justify-center  md:text-2xl">
           <Link
             href="/about"
             className="text-amber-950/80 hover:text-amber-950 no-underline dark:text-amber-100/80 dark:hover:text-amber-100 "
