@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import UsefulLinks from './components/UsefulLinks'
 
 export const metadata: Metadata = {
   title: 'GW Lawyers Ltd',
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className="">
         <Navbar />
         {children}
+        <UsefulLinks/>
         <Footer/>
       </body>
     </html>

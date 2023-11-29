@@ -36,4 +36,7 @@ body {
   .section-title {
     @apply pt-2 pb-8 font-bold text-3xl text-center;
   }
+  .section-alt {
+    @apply py-8 px-4 text-amber-950 dark:bg-gradient-to-t from-amber-950 dark:text-amber-50 lg:px-8;
+  }
 }

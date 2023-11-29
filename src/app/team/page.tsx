@@ -7,7 +7,7 @@ export default function Team() {
       <h1 className="section-title">Meet our team</h1>
       <div className="px-4 md:px-8 lg:grid lg:grid-cols-3 lg:gap-4">
         {/* md:grid md:grid-rows-2 md:grid-flow-col */}
-        <div className="flex flex-wrap justify-center pb-4 w-full px-16 sm:px-48 md:px-60 lg:px-0">
+        <div className="flex flex-wrap justify-center pb-4 w-full px-16 sm:px-48 md:px-60 lg:px-0 lg:pb-20 xl:pb-16">
           <Image
             // className="w-max"
             width={250}
