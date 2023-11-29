@@ -3,21 +3,23 @@ import george from 'public/george-wang.jpg'
 
 export default function Team() {
   return (
-    <section className="py-8 px-4 text-amber-950 dark:bg-gradient-to-b from-amber-950 dark:text-amber-50 lg:px-8">
-      <h1 className="font-bold text-3xl flex justify-center text-center pb-8">
-        Meet our team
-      </h1>
-      <div className="px-4 md:px-8">
-        <div className="flex justify-center pb-4">
+    <section className="section">
+      <h1 className="section-title">Meet our team</h1>
+      <div className="px-4 md:px-8 lg:grid lg:grid-cols-3 lg:gap-4">
+        {/* md:grid md:grid-rows-2 md:grid-flow-col */}
+        <div className="flex flex-wrap justify-center pb-4 w-full px-16 sm:px-48 md:px-60 lg:px-0">
           <Image
-            className="pb-4"
+            // className="w-max"
+            width={250}
             src={george}
             alt="Profile picture of George Wang"
             priority={true}
           />
+          <h2 className="font-bold text-xl pt-4 text-center">
+            Dongxing &#40;George&#41; Wang
+          </h2>
         </div>
-        <h2 className="font-bold text-xl pb-4 text-center">Dongxing &#40;George&#41; Wang</h2>
-        <div className="leading-7">
+        <div className="leading-7 md:col-span-2 ">
           <p className="pb-6">
             George is the principal person of the firm. He was admitted as a
             barrister and solicitor of the High Court of New Zealand in 2007.
@@ -37,15 +39,17 @@ export default function Team() {
             cooperated with some trustworthy and reputable barristers and is
             able to provide clients with low cost and high quality solutions.
           </p>
-
-          <div className="pb-10">
-            <h3 className="font-bold text-xl">Qualifications</h3>
-            <ul className="">
-              <li>Bachelor of Laws &#40;Hons&#41; at <span className='whitespace-nowrap '>University of Auckland</span></li>
-              <li>Bachelor of Engineering</li>
-              <li>Master of Philosophy</li>
-            </ul>
-          </div>
+        </div>
+        <div className="pb-10 lg:col-span-3 lg:text-center lg:pt-4">
+          <h3 className="font-bold text-xl pb-2">Qualifications</h3>
+          <ul className="text-sm md:text-base">
+            <li>
+              Bachelor of Laws &#40;Hons&#41; at{' '}
+              <span className="whitespace-nowrap ">University of Auckland</span>
+            </li>
+            <li>Bachelor of Engineering</li>
+            <li>Master of Philosophy</li>
+          </ul>
         </div>
       </div>
     </section>

@@ -1,13 +1,12 @@
 export default function About() {
   return (
-    <section className="py-8 px-4 text-amber-950 dark:bg-gradient-to-b from-amber-950 dark:text-amber-50 lg:px-8">
-      <h2 className="pt-2 pb-8 text-center text-2xl font-bold">
-        About GW Lawyers Ltd
-      </h2>
+    <section className="section">
+      <h1 className="section-title">About GW Lawyers Ltd</h1>
       <p className="pb-10 px-4 leading-7 md:px-8">
         GW Lawyers Limited is a humble law firm based in New Lynn. We are
         incorporated under the Lawyers and Conveyancer Act 2006 and the
-        Companies Act 1993. We aim to provide <b>low price</b> and <b>high quality</b> Legal services.
+        Companies Act 1993. We aim to provide <b>low price</b> and{' '}
+        <b>high quality</b> Legal services.
       </p>
       <p className="px-4 md:px-8">Our legal services include:</p>
       <div className="px-8 pt-2 pb-10 md:px-12">

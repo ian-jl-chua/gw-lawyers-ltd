@@ -15,19 +15,19 @@ export default function Navbar() {
         <div className="flex flex-row justify-between align-middle gap-6 text-xl sm:text-center md:justify-center  md:text-2xl">
           <Link
             href="/about"
-            className="text-amber-950/80 hover:text-amber-950 no-underline dark:text-amber-100/80 dark:hover:text-amber-100 "
+            className="nav-link"
           >
             About Us
           </Link>
           <Link
             href="/team"
-            className="text-amber-950/80 hover:text-amber-950 no-underline dark:text-amber-100/80 dark:hover:text-amber-100 "
+            className="nav-link"
           >
             Our Team
           </Link>
           <Link
             href="/contact"
-            className="text-amber-950/80 hover:text-amber-950 no-underline dark:text-amber-100/80 dark:hover:text-amber-100 "
+            className="nav-link"
           >
             Contact Us
           </Link>
