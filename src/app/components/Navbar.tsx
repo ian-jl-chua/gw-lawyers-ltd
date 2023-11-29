@@ -1,5 +1,23 @@
 import Link from 'next/link'
 
+const navList = [
+  {
+    id: 1,
+    navName: 'About Us',
+    navRef: '/about',
+  },
+  {
+    id: 2,
+    navName: 'Our Team',
+    navRef: '/team',
+  },
+  {
+    id: 3,
+    navName: 'Contact Us',
+    navRef: '/contact',
+  },
+]
+
 export default function Navbar() {
   return (
     <nav className="bg-amber-100 dark:bg-yellow-950 p-4 sticky top-0 drop-shadow-xl z-10 md:p-8">
@@ -13,24 +31,11 @@ export default function Navbar() {
           </Link>
         </h1>
         <div className="flex flex-row justify-between align-middle gap-6 text-xl sm:text-center md:justify-center  md:text-2xl">
-          <Link
-            href="/about"
-            className="nav-link"
-          >
-            About Us
-          </Link>
-          <Link
-            href="/team"
-            className="nav-link"
-          >
-            Our Team
-          </Link>
-          <Link
-            href="/contact"
-            className="nav-link"
-          >
-            Contact Us
-          </Link>
+          {navList.map((list) => (
+            <Link className='nav-link' key={list.id} href={list.navRef}>
+              {list.navName}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
