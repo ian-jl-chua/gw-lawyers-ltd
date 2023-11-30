@@ -7,7 +7,7 @@ export default function Team() {
       <h1 className="section-title">Meet our team</h1>
       <div className="px-4 md:px-8 lg:grid lg:grid-cols-3 lg:gap-4">
         {/* md:grid md:grid-rows-2 md:grid-flow-col */}
-        <div className="flex flex-wrap justify-center pb-4 w-full px-16 sm:px-48 md:px-60 lg:px-0 lg:pb-20 xl:pb-16">
+        <div className="flex flex-wrap justify-center pb-16 w-full px-16 sm:px-48 md:px-60 lg:px-0">
           <Image
             // className="w-max"
             width={250}
@@ -15,9 +15,18 @@ export default function Team() {
             alt="Profile picture of George Wang"
             priority={true}
           />
-          <h2 className="font-bold text-xl pt-4 text-center">
-            Dongxing &#40;George&#41; Wang
-          </h2>
+          <div className="whitespace-nowrap">
+            <h2 className="font-bold text-xl pt-4 text-center ">
+              Dongxing &#40;George&#41; Wang
+            </h2>
+            <p className="text-sm ">
+              <b>MOBILE</b> <a href="tel:+64211591367">021 159 1367</a>
+            </p>
+            <p className="text-sm ">
+              <b>EMAIL</b> <a href="#">george@gwlawyers.co.nz</a>
+              {/* still need to fix the email link!!!! */}
+            </p>
+          </div>
         </div>
         <div className="leading-7 md:col-span-2 ">
           <p className="pb-6">
