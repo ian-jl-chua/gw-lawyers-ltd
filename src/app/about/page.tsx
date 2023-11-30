@@ -34,7 +34,7 @@ export default function About() {
         </ul>
       </div>
       <p className="px-4 leading-7 pb-10 md:px-8">
-        We act in the best interest of our clients and value the relationship
+        We act in the best interest of our clients, and value the relationship
         between our clients and us. We respect our clients and understand
         wholeheartedly that it is our clients who provide us with this
         opportunity to serve them.

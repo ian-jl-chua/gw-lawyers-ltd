@@ -12,10 +12,14 @@ interface SiteLinkProps {
 
 export default function SiteLink({ links }: SiteLinkProps) {
   return (
-    <ul className="list-inside leading-9">
+    <ul className="px-4 py-4 text-center list-inside leading-10 sm:text-xl lg:px-8 lg:text-left lg:text-2xl">
       {links.map((link) => (
-        <li key={link.id} className="underline-offset-4 hover:text-amber-500 hover:underline hover:decoration-2 ">
-          <Link href={link.linkRef} target="blank">
+        <li key={link.id} className="sm:py-4">
+          <Link
+            href={link.linkRef}
+            className="underline-offset-4 hover:text-amber-600 hover:underline hover:decoration-2 hover:underline-offset-8 "
+            target="blank"
+          >
             {link.linkName}
           </Link>
         </li>
