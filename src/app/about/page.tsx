@@ -1,7 +1,9 @@
+import {EBGaramond} from '../fonts/font'
+
 export default function About() {
   return (
     <section className="section">
-      <h1 className="section-title">About GW Lawyers Ltd</h1>
+      <h1 style={EBGaramond.style} className="section-title">About GW Lawyers Ltd</h1>
       <p className="pb-10 px-4 leading-7 md:px-8">
         GW Lawyers Limited is a humble law firm based in New Lynn. We are
         incorporated under the Lawyers and Conveyancer Act 2006 and the

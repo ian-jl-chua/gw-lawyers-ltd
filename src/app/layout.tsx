@@ -19,8 +19,8 @@ export default function RootLayout({
       <body className="">
         <Navbar />
         {children}
-        <UsefulLinks/>
-        <Footer/>
+        <UsefulLinks />
+        <Footer />
       </body>
     </html>
   )

@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import george from 'public/george-wang.jpg'
+import { EBGaramond } from '../fonts/font'
+
 
 export default function Team() {
   return (
     <section className="section">
-      <h1 className="section-title">Meet our team</h1>
+      <h1 style={EBGaramond.style} className="section-title">Meet Our Team</h1>
       <div className="px-4 md:px-8 lg:grid lg:grid-cols-3 lg:gap-4">
-        {/* md:grid md:grid-rows-2 md:grid-flow-col */}
         <div className="flex flex-wrap justify-center pb-16 w-full px-16 sm:px-48 md:px-60 lg:px-0">
           <Image
             // className="w-max"

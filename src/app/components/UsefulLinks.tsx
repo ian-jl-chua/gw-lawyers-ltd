@@ -1,4 +1,5 @@
 import SiteLink from './SiteLink'
+import { EBGaramond } from '../fonts/font'
 
 const links = [
   {
@@ -31,7 +32,7 @@ const links = [
 export default function UsefulLinks() {
   return (
     <section className="section2">
-      <h1 className="section-title">Useful Links</h1>
+      <h1 style={EBGaramond.style} className="section-title">Useful Links</h1>
       <div>
         <SiteLink links={links} />
       </div>
