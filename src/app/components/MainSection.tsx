@@ -4,7 +4,7 @@ import mainImg from 'public/main-img.jpg'
 export default function MainSection() {
   return (
     <section className="w-full grid grid-row-2 md:grid-cols-2 lg:grid-cols-3">
-      <div className=" md:blur-sm lg:col-span-2">
+      <div className="md:opacity-40 lg:col-span-2">
         <Image
           className="mt-0 w-full h-min"
           src={mainImg}
