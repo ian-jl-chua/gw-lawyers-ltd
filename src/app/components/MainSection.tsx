@@ -4,11 +4,13 @@ import mainImg from 'public/main-img.jpg'
 export default function MainSection() {
   return (
     <section className="landing-bg w-full grid grid-row-2 md:grid-cols-2 lg:grid-cols-3">
-      <div className="lg:col-span-2"></div>
-      <div className="flex flex-col justify-center text-center p-4 z-10 md:pr-8">
+      <div className="lg:col-span-2">
+        {/* Form logic will go here */}
+      </div>
+      <div className="flex flex-col justify-center text-center p-4 z-10 md:pr-8 md:p-2 md:leading-10">
         <h2 className="py-8 text-2xl font-bold md:pt-0 lg:text-4xl">
-          Qualified And Confidential{' '}
-          <span className="whitespace-nowrap">Legal Advice</span>
+          Qualified And Confidential
+          <span className="whitespace-nowrap"> Legal Advice</span>
         </h2>
         <p className="pb-8 lg:text-2xl">
           We act in the best interest of our clients, by protecting their legal
