@@ -21,11 +21,11 @@ const navList = [
 
 export default function Navbar() {
   return (
-    <nav className="backdrop-blur-md bg-amber-100/80 dark:bg-yellow-950/80 p-4 sticky top-0 drop-shadow-xl z-10 md:p-8">
+    <nav className="backdrop-blur-md bg-amber-100/80 dark:bg-yellow-950/80 p-4 sticky top-0 drop-shadow-xl z-[100] md:p-8">
       <div className="prose prose-md mx-auto flex justify-between flex-col md:flex-row">
         <h1
           style={EBGaramond.style}
-          className="text-5xl font-bold grid place-content-center mt-2 mb-8 md:mb-0 sm:mt-0"
+          className="text-4xl font-bold grid place-content-center mt-2 mb-8 sm:mt-0 md:mb-0 lg:text-5xl"
         >
           <Link
             href="/"
