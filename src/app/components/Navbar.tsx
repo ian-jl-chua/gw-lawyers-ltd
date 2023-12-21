@@ -34,7 +34,7 @@ export default function Navbar() {
             GW LAWYERS LTD
           </Link>
         </h1>
-        <div className="flex flex-row justify-between align-middle gap-6 text-xl sm:text-center md:justify-center  md:text-2xl">
+        <div className="flex flex-row justify-between align-middle gap-6 text-xl sm:text-center md:justify-center  md:text-2xl md:mt-2">
           {navList.map((list) => (
             <Link className="nav-link" key={list.id} href={list.navRef}>
               {list.navName}

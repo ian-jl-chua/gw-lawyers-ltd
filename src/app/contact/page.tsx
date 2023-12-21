@@ -1,10 +1,104 @@
+'use client'
 import { EBGaramond } from '../fonts/font'
+import { useState } from 'react'
+
+const sendEmail = async (formData: any) => {
+  try {
+    // You can use a service like Email.js or a serverless function to send emails.
+    // For simplicity, I'll just log the data to the console.
+    console.log('Sending email to example@email.com:', formData)
+    // Clear the form data after submission
+    return true
+  } catch (error) {
+    console.error('Error sending email:', error)
+    return false
+  }
+}
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    // Add your form submission logic here
+    const isSubmissionSuccessful = await sendEmail(formData)
+
+    // Clear the form only if the submission was successful
+    if (isSubmissionSuccessful) {
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }
+  }
+
   return (
     <section className="section">
-      <h1 style={EBGaramond.style} className="section-title">Our Office</h1>
       <>
+        <h1 style={EBGaramond.style} className="section-title">
+          Contact Us
+        </h1>
+        <div className="lg:col-span-2">
+          <form onSubmit={handleSubmit} className="px-8">
+            <label className="block mb-2 text-sm font-bold">Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
+              required
+            />
+
+            <label className="block mb-2 text-sm font-bold">Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
+              required
+            />
+
+            <label className="block mb-2 text-sm font-bold">Message:</label>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
+              rows={4}
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </>
+      <>
+        <h1 style={EBGaramond.style} className="section-title">
+          Our Office
+        </h1>
         <h2 className="px-2 text-xl font-bold">Auckland location</h2>
         <div className="flex flex-wrap lg:grid lg:grid-cols-2 ">
           <iframe

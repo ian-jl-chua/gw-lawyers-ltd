@@ -3,16 +3,20 @@ import mainImg from 'public/main-img.jpg'
 
 export default function MainSection() {
   return (
-    <section className="landing-bg w-full grid grid-row-2 md:grid-cols-2 lg:grid-cols-3">
-      <div className="lg:col-span-2">
-        {/* Form logic will go here */}
+    <section className="w-full landing-bg grid grid-row-2 lg:grid-cols-2">
+      <div className="">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet non
+          iste optio recusandae officiis mollitia facilis nam in alias
+          voluptatem nesciunt soluta adipisci minima minus, quidem corporis
+          aperiam. Mollitia, dicta!
+        </p>
       </div>
-      <div className="flex flex-col justify-center text-center p-4 z-10 md:pr-8 md:p-2 md:leading-10">
-        <h2 className="py-8 text-2xl font-bold md:pt-0 lg:text-4xl">
-          Qualified And Confidential
-          <span className="whitespace-nowrap"> Legal Advice</span>
+      <div className="flex flex-col justify-center text-center px-8 lg:text-left  lg:pr-8">
+        <h2 className="py-8 text-2xl font-bold tracking-widest md:pt-0 md:text-3xl lg:text-5xl">
+          Qualified, Confidential Legal Advice
         </h2>
-        <p className="pb-8 lg:text-2xl">
+        <p className="pb-8 md:text-2xl lg:text-3xl">
           We act in the best interest of our clients, by protecting their legal
           and equitable rights, to help them succeed.
         </p>
@@ -27,11 +31,4 @@ export default function MainSection() {
           alt="Books on the table"
           priority={true}
         /> */
-}
-{
-  /* <div className="opacity-50 ">
-          <div className=''>
-            
-          </div>
-        </div> */
 }
