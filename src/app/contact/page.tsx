@@ -61,6 +61,7 @@ export default function Contact() {
               type="text"
               name="name"
               value={formData.name}
+              placeholder='Your Name'
               onChange={handleChange}
               className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
               required
@@ -71,6 +72,7 @@ export default function Contact() {
               type="email"
               name="email"
               value={formData.email}
+              placeholder='Your Email'
               onChange={handleChange}
               className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
               required
@@ -80,6 +82,7 @@ export default function Contact() {
             <textarea
               name="message"
               value={formData.message}
+              placeholder='Your Message'
               onChange={handleChange}
               className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
               rows={4}
@@ -88,7 +91,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+              className="w-full py-2 rounded-md bg-amber-950/80 text-amber-50 hover:bg-amber-950 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100"
             >
               Submit
             </button>
