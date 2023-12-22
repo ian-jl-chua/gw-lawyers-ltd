@@ -51,38 +51,41 @@ export default function Contact() {
   return (
     <section className="section">
       <>
-        <h1 style={EBGaramond.style} className="section-title">
+        <h2 style={EBGaramond.style} className="section-title">
           Contact Us
-        </h1>
+        </h2>
         <div className="lg:col-span-2">
           <form onSubmit={handleSubmit} className="px-8">
-            <label className="block mb-2 text-sm font-bold">Name:</label>
+            <label htmlFor='name' className="block mb-2 text-sm font-bold">Name:</label>
             <input
               type="text"
               name="name"
+              id='name'
               value={formData.name}
-              placeholder='Your Name'
+              placeholder="Your Name"
               onChange={handleChange}
               className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
               required
             />
 
-            <label className="block mb-2 text-sm font-bold">Email:</label>
+            <label htmlFor='email' className="block mb-2 text-sm font-bold">Email:</label>
             <input
               type="email"
               name="email"
+              id='email'
               value={formData.email}
-              placeholder='Your Email'
+              placeholder="Your Email"
               onChange={handleChange}
               className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
               required
             />
 
-            <label className="block mb-2 text-sm font-bold">Message:</label>
+            <label htmlFor='message' className="block mb-2 text-sm font-bold">Message:</label>
             <textarea
               name="message"
+              id='message'
               value={formData.message}
-              placeholder='Your Message'
+              placeholder="Your Message"
               onChange={handleChange}
               className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
               rows={4}
@@ -99,9 +102,9 @@ export default function Contact() {
         </div>
       </>
       <>
-        <h1 style={EBGaramond.style} className="section-title">
+        <h2 style={EBGaramond.style} className="section-title">
           Our Office
-        </h1>
+        </h2>
         <h2 className="px-2 text-xl font-bold">Auckland location</h2>
         <div className="flex flex-wrap lg:grid lg:grid-cols-2 ">
           <iframe
