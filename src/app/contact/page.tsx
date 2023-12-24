@@ -2,10 +2,16 @@
 import { EBGaramond } from '../fonts/font'
 import { useState } from 'react'
 
-const sendEmail = async (formData: any) => {
+export interface FormData {
+  name: string
+  email: string
+  message: string
+}
+
+const sendEmail = async (formData: FormData) => {
   try {
     // You can use a service like Email.js or a serverless function to send emails.
-    // For simplicity, I'll just log the data to the console.
+    // For now it is console logged
     console.log('Sending email to example@email.com:', formData)
     // Clear the form data after submission
     return true
@@ -16,7 +22,7 @@ const sendEmail = async (formData: any) => {
 }
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     message: '',
@@ -50,63 +56,78 @@ export default function Contact() {
 
   return (
     <section className="section">
-      <>
+      <div className="pb-20">
         <h2 style={EBGaramond.style} className="section-title">
           Contact Us
         </h2>
-        <div className="lg:col-span-2">
-          <form onSubmit={handleSubmit} className="px-8">
-            <label htmlFor='name' className="block mb-2 text-sm font-bold">Name:</label>
-            <input
-              type="text"
-              name="name"
-              id='name'
-              value={formData.name}
-              placeholder="Your Name"
-              onChange={handleChange}
-              className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
-              required
-            />
+        <div className="lg:grid lg:grid-cols-2">
+          <div className="flex justify-center content-center">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              libero voluptas quis, nam, id deserunt ipsa doloribus saepe quam
+              obcaecati odit. Rerum neque aliquid ipsum soluta rem quo officiis
+              porro.
+            </p>
+          </div>
+          <div className="px-2 py-4">
+            <form onSubmit={handleSubmit} className="">
+              <label htmlFor="name" className="block mb-2 text-sm font-bold">
+                Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value={formData.name}
+                placeholder="Your Name"
+                onChange={handleChange}
+                className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
+                required
+              />
 
-            <label htmlFor='email' className="block mb-2 text-sm font-bold">Email:</label>
-            <input
-              type="email"
-              name="email"
-              id='email'
-              value={formData.email}
-              placeholder="Your Email"
-              onChange={handleChange}
-              className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
-              required
-            />
+              <label htmlFor="email" className="block mb-2 text-sm font-bold">
+                Email <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value={formData.email}
+                placeholder="Your Email"
+                onChange={handleChange}
+                className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
+                required
+              />
 
-            <label htmlFor='message' className="block mb-2 text-sm font-bold">Message:</label>
-            <textarea
-              name="message"
-              id='message'
-              value={formData.message}
-              placeholder="Your Message"
-              onChange={handleChange}
-              className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
-              rows={4}
-              required
-            ></textarea>
-
-            <button
-              type="submit"
-              className="w-full py-2 rounded-md bg-amber-950/80 text-amber-50 hover:bg-amber-950 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100"
-            >
-              Submit
-            </button>
-          </form>
+              <label htmlFor="message" className="block mb-2 text-sm font-bold">
+                Message <span className="text-red-500">*</span>
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                value={formData.message}
+                placeholder="Your Message"
+                onChange={handleChange}
+                className="w-full p-2 mb-4 border border-gray-300 text-slate-900 rounded-md"
+                rows={4}
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full py-2 rounded-md bg-amber-950/80 text-amber-50 hover:bg-amber-950 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-      </>
+      </div>
       <>
         <h2 style={EBGaramond.style} className="section-title">
           Our Office
         </h2>
         <h2 className="px-2 text-xl font-bold">Auckland location</h2>
-        <div className="flex flex-wrap lg:grid lg:grid-cols-2 ">
+        <div className="flex flex-wrap lg:grid lg:grid-cols-2">
           <iframe
             className="px-2 py-4 w-full aspect-square md:aspect-video"
             // width={768}
