@@ -14,7 +14,7 @@ const navList = [
   },
   {
     id: 3,
-    navName: 'Contact Us',
+    navName: 'Contact',
     navRef: '/contact',
   },
 ]

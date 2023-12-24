@@ -56,7 +56,7 @@ export default function Contact() {
 
   return (
     <section className="section">
-        <div className='pb-20'>
+      <div className="pb-20">
         <h2 style={EBGaramond.style} className="section-title">
           Our Office
         </h2>
@@ -69,7 +69,9 @@ export default function Contact() {
             src="http://maps.google.co.nz/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=37+Totara+Avenue,+New+Lynn,+Auckland&amp;sll=-36.909573,174.68202&amp;sspn=0.011821,0.019205&amp;ie=UTF8&amp;hq=&amp;hnear=37+Totara+Ave,+New+Lynn+0600,+Auckland&amp;z=15&amp;ll=-36.909573,174.68202&amp;output=embed"
           ></iframe>
           <div className="p-4 text-sm grid grid-cols-2 gap-8 md:grid-cols-3 md:text-base lg:grid-cols-2 lg:gap-0 lg:pb-16">
-            <div className="">
+            <div className='pb-4'>
+              <b>Physical Address</b>
+              <br />
               Office 3
               <br />
               37 Totara Ave
@@ -80,7 +82,9 @@ export default function Contact() {
               <br />
               &#40;Two hours free parking at 3088 Great North Rd, New Lynn&#41;
             </div>
-            <div>
+            <div className='pb-4'>
+              <b>Postal Address</b>
+              <br />
               PO Box 15799
               <br />
               New Lynn
@@ -89,33 +93,40 @@ export default function Contact() {
             </div>
             <div className="lg:col-span-2">
               <p>
-                Phone <a href="tel:+6498261905">09 826 1905</a>
+                <b>Phone </b>
+                <a href="tel:+6498261905"> &#40;09&#41; 826 1905</a>
               </p>
               <p>
-                Fax <a href="tel:+6498268239">09 826 8239</a>
+                <b>Fax </b>
+                <a href="tel:+6498268239"> &#40;09&#41; 826 8239</a>
               </p>
               <p>
-                Email <a href="#">george@gwlawyers.co.nz</a>
+                <b>Email </b>
+                <a href="#"> george@gwlawyers.co.nz</a>
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="pb-8">
-        <h2 id='contactUs' style={EBGaramond.style} className="section-title scroll-mt-32">
+        <h2
+          id="contactUs"
+          style={EBGaramond.style}
+          className="section-title scroll-mt-36"
+        >
           Contact Us
         </h2>
-        <div className="lg:grid lg:grid-cols-2">
-          <div className="flex justify-center content-center">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              libero voluptas quis, nam, id deserunt ipsa doloribus saepe quam
-              obcaecati odit. Rerum neque aliquid ipsum soluta rem quo officiis
-              porro.
+        <div className="px-2 py-4 lg:grid lg:grid-cols-2">
+          <div className="hidden px-2 py-4 lg:block  justify-center">
+            <h3 className='text-3xl tracking-wider pb-8'>Let us discuss some options</h3>
+            <p className='text-xl pr-4'>
+            Please reach us via the details above, or fill out the online form provided. 
+            <br />
+            One of our team will get back to you shortly.
             </p>
           </div>
-          <div className="px-2 py-4">
-            <form onSubmit={handleSubmit} className="">
+          <div className="px-2 py-8 rounded-lg bg-amber-100/20 dark:bg-amber-950/30">
+            <form onSubmit={handleSubmit}>
               <label htmlFor="name" className="block mb-2 text-sm font-bold">
                 Name <span className="text-red-500">*</span>
               </label>
@@ -159,7 +170,7 @@ export default function Contact() {
               ></textarea>
               <button
                 type="submit"
-                className="w-full py-2 rounded-md bg-amber-950/80 text-amber-50 hover:bg-amber-950 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100"
+                className="w-full py-2 rounded-md bg-amber-950 text-amber-50 hover:bg-amber-800 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100"
               >
                 Submit
               </button>
@@ -167,7 +178,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    
     </section>
   )
 }

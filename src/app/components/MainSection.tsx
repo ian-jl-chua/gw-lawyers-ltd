@@ -21,7 +21,7 @@ export default function MainSection() {
         </p>
         <button className="flex justify-center text-xl pb-20 lg:justify-start ">
           <Link
-            className="bg-amber-950/80 text-amber-50 hover:bg-amber-950 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100 w-60 h-16 pt-4 rounded-md flex justify-center content-center "
+            className="bg-amber-950/90 text-amber-50 hover:bg-amber-800 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100 w-60 h-16 pt-4 rounded-md flex justify-center content-center "
             href="/contact#contactUs"
           >
             Contact Us
