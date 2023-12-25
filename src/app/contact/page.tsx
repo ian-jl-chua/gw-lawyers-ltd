@@ -66,10 +66,10 @@ export default function Contact() {
             className="px-2 py-4 w-full aspect-square md:aspect-video"
             // width={768}
             // height={500}
-            src="http://maps.google.co.nz/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=37+Totara+Avenue,+New+Lynn,+Auckland&amp;sll=-36.909573,174.68202&amp;sspn=0.011821,0.019205&amp;ie=UTF8&amp;hq=&amp;hnear=37+Totara+Ave,+New+Lynn+0600,+Auckland&amp;z=15&amp;ll=-36.909573,174.68202&amp;output=embed"
+            src={`http://maps.google.co.nz/maps?f=q&source=s_q&hl=en&geocode=&q=37+Totara+Avenue,+New+Lynn,+Auckland&sll=-36.909573,174.68202&sspn=0.011821,0.019205&ie=UTF8&hq=&hnear=37+Totara+Ave,+New+Lynn+0600,+Auckland&z=15&ll=-36.909573,174.68202&output=embed`}
           ></iframe>
           <div className="p-4 text-sm grid grid-cols-2 gap-8 md:grid-cols-3 md:text-base lg:grid-cols-2 lg:gap-0 lg:pb-16">
-            <div className='pb-4'>
+            <div className="pb-4">
               <b>Physical Address</b>
               <br />
               Office 3
@@ -82,7 +82,7 @@ export default function Contact() {
               <br />
               &#40;Two hours free parking at 3088 Great North Rd, New Lynn&#41;
             </div>
-            <div className='pb-4'>
+            <div className="pb-4">
               <b>Postal Address</b>
               <br />
               PO Box 15799
@@ -118,11 +118,14 @@ export default function Contact() {
         </h2>
         <div className="px-2 py-4 lg:grid lg:grid-cols-2">
           <div className="hidden px-2 py-4 lg:block  justify-center">
-            <h3 className='text-3xl tracking-wider pb-8'>Let us discuss some options</h3>
-            <p className='text-xl pr-4'>
-            Please reach us via the details above, or fill out the online form provided. 
-            <br />
-            One of our team will get back to you shortly.
+            <h3 className="text-3xl tracking-wider pb-8">
+              <b>Let us discuss some options</b>
+            </h3>
+            <p className="text-xl pr-4">
+              Please reach us via the details above, or fill out the online form
+              provided.
+              <br />
+              One of our team will get back to you shortly.
             </p>
           </div>
           <div className="px-2 py-8 rounded-lg bg-amber-100/20 dark:bg-amber-950/30">
@@ -170,7 +173,7 @@ export default function Contact() {
               ></textarea>
               <button
                 type="submit"
-                className="w-full py-2 rounded-md bg-amber-950 text-amber-50 hover:bg-amber-800 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100"
+                className="w-full py-2 rounded-md bg-amber-950 text-amber-50 hover:bg-amber-800 dark:bg-amber-100/80 dark:text-neutral-950 dark:hover:bg-amber-100 transition ease-out duration-100"
               >
                 Submit
               </button>
