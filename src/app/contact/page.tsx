@@ -56,6 +56,7 @@ export default function Contact() {
 
   return (
     <section className="section">
+      {/* Location Section */}
       <div className="pb-20">
         <h2 style={EBGaramond.style} className="section-title">
           Our Office
@@ -92,7 +93,7 @@ export default function Contact() {
               <br />
               Auckland 0640
             </div>
-            <div className="lg:col-span-2">
+            <div className="col-span-2 md:col-span-1 lg:col-span-2">
               <p>
                 <b>Phone </b>
                 <a href="tel:+6498261905"> &#40;09&#41; 826 1905</a>
@@ -109,6 +110,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Contact Section */}
       <div className="pb-8">
         <h2
           id="contactUs"
