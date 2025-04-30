@@ -67,6 +67,7 @@ export default function Contact() {
             // width={768}
             // height={500}
             src={`https://maps.google.co.nz/maps?f=q&source=s_q&hl=en&geocode=&q=37+Totara+Avenue,+New+Lynn,+Auckland&sll=-36.909573,174.68202&sspn=0.011821,0.019205&ie=UTF8&hq=&hnear=37+Totara+Ave,+New+Lynn+0600,+Auckland&z=15&ll=-36.909573,174.68202&output=embed`}
+            loading="lazy"
           ></iframe>
           <div className="p-4 text-sm grid grid-cols-2 gap-8 md:grid-cols-3 md:text-base lg:grid-cols-2 lg:gap-0 lg:pb-16">
             <div className="pb-4">
