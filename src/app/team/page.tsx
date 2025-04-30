@@ -68,17 +68,6 @@ export default function Team() {
             </ul>
           </div>
         </div>
-        {/* <div className="pb-10 lg:col-span-3 lg:text-center">
-          <h3 className="font-bold text-xl pb-2">Qualifications</h3>
-          <ul className="text-sm md:text-base">
-            <li>
-              Bachelor of Laws &#40;Hons&#41; at{' '}
-              <span className="whitespace-nowrap ">University of Auckland</span>
-            </li>
-            <li>Bachelor of Engineering</li>
-            <li>Master of Philosophy</li>
-          </ul>
-        </div> */}
       </div>
     </section>
   )
