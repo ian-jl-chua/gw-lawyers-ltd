@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import george from 'public/george-wang.jpg'
-import { EBGaramond } from '../fonts/font'
+import Image from "next/image";
+import george from "public/george-wang.jpg";
+import { EBGaramond } from "../fonts/font";
 
 export default function Team() {
   return (
@@ -9,7 +9,7 @@ export default function Team() {
         Meet Our Team
       </h1>
       <div className="px-4 md:px-8 lg:grid lg:grid-cols-3 lg:gap-4">
-        <div className="flex flex-wrap justify-center pb-16 w-full px-16 sm:px-48 md:px-60 lg:px-0 lg:pb-8">
+        <div className="flex w-full flex-wrap justify-center px-16 pb-16 sm:px-48 md:px-60 lg:px-0 lg:pb-8">
           <Image
             className="sm:h-[280px]"
             width={250}
@@ -18,13 +18,13 @@ export default function Team() {
             priority={true}
           />
           <div className="whitespace-nowrap">
-            <h2 className="font-bold text-xl pt-4 text-center">
+            <h2 className="pt-4 text-center text-xl font-bold">
               Dongxing &#40;George&#41; Wang
             </h2>
-            <p className="text-sm ">
+            <p className="text-sm">
               <b>MOBILE</b> <a href="tel:+64211591367">021 159 1367</a>
             </p>
-            <p className="text-sm ">
+            <p className="text-sm">
               <b>EMAIL</b> <a href="#">george@gwlawyers.co.nz</a>
               {/* still need to fix the email link!!!! */}
             </p>
@@ -32,7 +32,7 @@ export default function Team() {
         </div>
         <div className="leading-7 md:col-span-2">
           <div>
-            <h2 className="font-bold text-2xl pb-2">About</h2>
+            <h2 className="pb-2 text-2xl font-bold">About</h2>
             <p className="pb-4">
               George is the principal person of the firm. He was admitted as a
               barrister and solicitor of the High Court of New Zealand in 2007.
@@ -55,11 +55,11 @@ export default function Team() {
             </p>
           </div>
           <div className="pb-10 lg:col-span-3 lg:text-left">
-            <h3 className="font-bold text-xl pb-1">Qualifications</h3>
+            <h3 className="pb-1 text-xl font-bold">Qualifications</h3>
             <ul className="text-sm md:text-base">
               <li>
-                Bachelor of Laws &#40;Hons&#41; at{' '}
-                <span className="whitespace-nowrap ">
+                Bachelor of Laws &#40;Hons&#41; at{" "}
+                <span className="whitespace-nowrap">
                   University of Auckland
                 </span>
               </li>
@@ -70,5 +70,5 @@ export default function Team() {
         </div>
       </div>
     </section>
-  )
+  );
 }
