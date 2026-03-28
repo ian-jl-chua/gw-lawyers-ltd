@@ -1,5 +1,5 @@
 import Image from "next/image";
-import george from "public/george-wang.jpg";
+import george from "public/georgewang.png";
 import { EBGaramond } from "../fonts/font";
 
 export default function Team() {
@@ -14,7 +14,7 @@ export default function Team() {
             className="sm:h-[280px]"
             width={250}
             src={george}
-            alt="Profile picture of George Wang"
+            alt="photo of George Wang"
             priority={true}
           />
           <div className="whitespace-nowrap">

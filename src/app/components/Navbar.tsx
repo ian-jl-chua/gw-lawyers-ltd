@@ -46,9 +46,9 @@ export default function Navbar() {
           </div>
 
           {/* Language Selector Tab */}
-          <div className="absolute -bottom-[1rem] sm:-bottom-[1.5rem] -right-1 translate-y-full z-[100] w-fit bg-amber-200 dark:bg-amber-900 px-3 py-1 rounded-b-lg ">
+          {/* <div className="absolute -bottom-[1rem] sm:-bottom-[1.5rem] -right-1 translate-y-full z-[100] w-fit bg-amber-200 dark:bg-amber-900 px-3 py-1 rounded-b-lg ">
             Language Selector
-          </div>
+          </div> */}
         </div>
       </nav>
     </>
